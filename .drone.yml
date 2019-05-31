@@ -8,8 +8,11 @@ steps:
     mirror: https://docker.mirrors.ustc.edu.cn
     registry: registry.cn-hangzhou.aliyuncs.com # 仓库
     repo: registry.cn-hangzhou.aliyuncs.com/lm93129/java # docker仓库地址
-    auto_tag: true
+    tag: ${DRONE_TAG}
     password:
       from_secret: docker_password
     username:
       from_secret: docker_username
+  when:
+    event:
+    - tag
