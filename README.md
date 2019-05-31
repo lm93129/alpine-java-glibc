@@ -1,4 +1,4 @@
-基于 Alpine 构建的 Java 环境
+基于 anapsix/alpine-java:8 构建的 Java 环境
 
 | 软件     | 版       |
 | -------- | -------- |
